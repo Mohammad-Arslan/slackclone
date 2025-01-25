@@ -26,6 +26,7 @@ export const SignUpCard = ({ setState }: SignUpCardProps) => {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [name, setName] = useState("");
+
   const [pending, setPending] = useState(false);
   const [error, setError] = useState("");
 
@@ -74,7 +75,7 @@ export const SignUpCard = ({ setState }: SignUpCardProps) => {
             disabled={pending}
             value={name}
             onChange={(e) => setName(e.target.value)}
-            placeholder="Enter your name"
+            placeholder="Enter your full name"
             type="text"
             required
           />
